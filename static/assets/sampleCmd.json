@@ -1,12 +1,8 @@
 {
 	"admin": [{
 		"name": "room",
-    "description": "Komenda pozwala na utworzenie pokoju dla użytkownika, który chcę otrzymać swój własny kanał, aby komenda została wykonana do końca i przycieliła użytkownikowi channel admina na kanale. Jego obecność na teamspeaku jest wymaga w przeciwnym razie Head Admin tworzący pokoju jest zobligowany doręczyć token do odzyskiwania channel admina osobie tworzonej pokój ręczeni. Wymagane parametry strefa oraz aktualna nazwa użytkownika.",
+    "description": "Komenda pozwala na utworzenie pokoju dla użytkownika, który chcę otrzymać swój własny kanał. Obecność użytkownika na teamspeaku jest wymaga w przeciwnym razie Head Admin tworzący pokoju jest zobligowany doręczyć token do odzyskiwania channel admina osobie tworzonej pokój ręczeni. Wymagane parametry strefa oraz aktualna nazwa użytkownika.",
 		"parameters": ["S1", "TeamSpeakUser"]
-	}, {
-		"name": "kicks",
-    "description": "Komenda pozwala na sprawdzenie kicków użytkownika danego dnia. Wymaga daty w określonym formacie oraz unikalnego ID użytkownika można znaleźć je pod zakładką permissions -> List All Clients w TeamSpeak'u.",
-		"parameters": ["L6bv1FMnkDONcwnf3LMKEpcB5NU=", "16-01-2017"]
 	}, {
 		"name": "kara",
     "description": "Wysyła renegata do karnego jeżyka na podany okres czasu :)! Tą samą komendą można anulować karę wpisując 0 w miejscu sekund.",

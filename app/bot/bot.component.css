@@ -20,12 +20,12 @@
 }
 
 .b_cmd_container > span{
-  border-radius: 10px;
+  border-radius: 0.625em;
   border: 1px solid black;
   display: block;
-  line-height:50px;
-  width: 150px;
-  margin: 10px;
+  line-height:3.75em;
+  width: 9.37500em;
+  margin: 0.625em;
   background: #00004C;
 }
 
@@ -37,27 +37,31 @@
 .cmd_panel{
   flex: 1 0 auto;
   display: flex;
-  flex-flow: row;
-  justify-content: space-around;
+  flex-flow:column;
+  justify-content: space-between;
   width: 100%;
 }
 
 .list {
-  padding-top: 30px;
+  padding-top: 2em;
   flex: 1;
   font-size: 1.2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 .list ul {
-  max-width: 100px;
+  padding: 0em;
+  nargin: 0em;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .list ul li{
-  padding: 5px;
+  height: 2em;
+  padding: 0em 0.625em;
 
 }
 
@@ -65,27 +69,76 @@
   flex: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
   overflow-y: hidden;
 }
 
 .exampleText {
   align-self: flex-start;
-  margin-left: 30px;
-  padding: 20px;
+  padding: 1.25em;
   font-size: 2em;
 }
 
 .description {
   align-self: center;
-  padding: 0 80px;
+  padding: 0 2em;
   text-align: justify;
   line-height: 2em;
 }
 
 .syntax {
   align-self: center;
-  padding-top: 50px;
+  padding-top: 1.12500em;
   font-size: 1.5em;
+}
+
+@media screen and (min-width: 480px) {
+  .about {
+    font-size: 1.4em;
+  }
+  .syntax {
+    align-self: center;
+    padding-top: 0.625em;
+    font-size: 1.0em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cmd_panel{
+    flex: 1 0 auto;
+    display: flex;
+    flex-flow:row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .list ul {
+    padding: 0em;
+    nargin: 0em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .list ul li{
+    height: 2em;
+    width: 3em;
+    padding: 0em 0.625em;
+
+  }
+  .example {
+    margin-top: 2em;
+  }
+  .description {
+    align-self: center;
+    padding: 0 5em;
+    text-align: justify;
+    line-height: 2em;
+  }
+  .syntax {
+    align-self: center;
+    padding-top: 2em;
+    font-size: 1.5em;
+  }
+
 }

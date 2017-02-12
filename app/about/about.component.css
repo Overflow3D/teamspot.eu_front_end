@@ -1,21 +1,37 @@
 :host {
   height: 100%;
   flex: 1 1 auto;
-  padding: 30px;
+  padding: 1rem 0.5rem;
+  font-size: 0.8rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   color: #ffffff;
 }
 
 ul li{
   list-style: none;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  padding-top: 0.390625em;
+  padding-bottom: 0.78125em;
+  line-height: 1.6em;
 }
 
 ul li ul {
-  padding-top: 5px;
-  padding-bottom: 10px;
+  padding-top: 0.390625em;
+  padding-bottom: 0.78125em;
+}
+
+ul li ul:last-child {
+  padding-bottom: 0.390625em;
+}
+
+
+@media screen and (min-width: 1024px) {
+  :host {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+  ul li {
+    line-height: 0.8em;
+  }
 }
