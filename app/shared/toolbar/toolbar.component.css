@@ -1,0 +1,41 @@
+:host {
+  padding-top: 16px;
+}
+
+strong > a > img {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  width: 320px;
+}
+
+@media screen and (min-width: 480px) {
+    strong > a > img {
+      margin-top: 15px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      width: 400px;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    strong > a > img {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-bottom: 0px;
+      width: 425px;
+    }
+}
+
+
+
+@media screen and (min-width: 1680px) {
+  strong > a > img {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    width: 450px;
+  }
+}

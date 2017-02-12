@@ -1,0 +1,43 @@
+/* Reset */
+html,
+body,
+div {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box-sizing border-box */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: gothic;
+    src: url("../static/assets/fonts/gothic_regular.ttf");
+}
+
+
+/* Set up a default font and some padding to provide breathing room */
+body,html {
+  font-family: gothic;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+  height: 100%;
+}
+
+sd-app {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 480px) {
+  body,html {
+    background: url("../static/assets/bc.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,10 @@
+<div [ngClass]="notifyState">
+  <div class="aboutCookies">
+    Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych, reklamowych oraz funkcjonalnych. Dzięki nim możemy indywidualnie dostosować stronę do twoich potrzeb.
+    Każdy może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą zbierane żadne informacje
+  </div>
+  <div class="notifyPanel">
+    <div class="acceptTerms" (click)="hideNotify($event)">Accept</div>
+    <div class="dismissTerms"(click)="hideNotify($event)">Dismiss</div>
+  </div>
+</div>

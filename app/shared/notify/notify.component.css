@@ -1,0 +1,78 @@
+:host {
+  color: #ffffff;
+}
+.notifyContainer {
+  background: #2e3d54;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 0.5rem;
+  height: 10rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hideNotify {
+  display: none;
+}
+
+.aboutCookies {
+  margin-bottom: 1em;
+}
+
+.notifyPanel {
+  display: flex;
+  justify-content: space-around;
+  height: 3.12500em;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.acceptTerms{
+  background: navy;
+  line-height: 3.12500em;
+  width: 6.25em;
+  border-radius: 0.625em;
+  margin-right: 1em;
+}
+
+.acceptTerms:hover{
+  background: #323299;
+}
+
+.dismissTerms:hover {
+  background: #999999;
+}
+
+.dismissTerms{
+  background: gray;
+  line-height: 3.12500em;
+  width: 6.25em;
+  border-radius: 0.625em;
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .notifyContainer {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .notifyContainer {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .notifyContainer {
+    height: 8rem;
+    font-size: 1rem;
+  }
+}

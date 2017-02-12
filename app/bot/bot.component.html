@@ -1,0 +1,24 @@
+<h2>Wybierz liste komend :</h2>
+<div class="b_cmd_container">
+<span (click)="cmdFor($event)">User</span>
+<span (click)="cmdFor($event)">Admin</span>
+</div>
+<div class="cmd_panel">
+  <div class="list">
+    <ul>
+      <li *ngFor="let cmd of sampleInfo" (mouseenter)="userCmd($event)">{{cmd.name}}</li>
+    </ul>
+  </div>
+
+  <div class="example">
+    <div class="exampleText">
+      {{exampleTitle}}
+    </div>
+    <div class="description">
+      {{ description }}
+    </div>
+    <div class="syntax">
+      {{cmd}} {{params}}
+    </div>
+  </div>
+</div>

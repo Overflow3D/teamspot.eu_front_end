@@ -1,0 +1,39 @@
+:host {
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  color: #ffffff;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  width: 50px;
+}
+
+.credits {
+  position: absolute;
+  left: 5%;
+  align-self: center;
+  align-content: center;
+}
+
+
+@media screen and (min-width: 480px) {
+  .credits {
+    font-size: 0.8em;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .credits {
+    font-size: 1em;
+    }
+}

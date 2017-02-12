@@ -1,0 +1,91 @@
+:host {
+  flex: 1 0 auto;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+}
+
+.b_cmd_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.b_cmd_container > span{
+  border-radius: 10px;
+  border: 1px solid black;
+  display: block;
+  line-height:50px;
+  width: 150px;
+  margin: 10px;
+  background: #00004C;
+}
+
+.b_cmd_container > span:hover {
+  transition: all 0.3s ease-in;
+  background: #000073;
+}
+
+.cmd_panel{
+  flex: 1 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.list {
+  padding-top: 30px;
+  flex: 1;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list ul {
+  max-width: 100px;
+}
+
+.list ul li{
+  padding: 5px;
+
+}
+
+.example {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.exampleText {
+  align-self: flex-start;
+  margin-left: 30px;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.description {
+  align-self: center;
+  padding: 0 80px;
+  text-align: justify;
+  line-height: 2em;
+}
+
+.syntax {
+  align-self: center;
+  padding-top: 50px;
+  font-size: 1.5em;
+}
